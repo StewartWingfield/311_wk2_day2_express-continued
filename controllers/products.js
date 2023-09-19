@@ -17,7 +17,7 @@ const create = (req, res) => {
       ...req.body,
       _id: products.length + 1
     }
-    users.push(newProduct)
+    products.push(newProduct)
   
     res.json(newProduct)
   }

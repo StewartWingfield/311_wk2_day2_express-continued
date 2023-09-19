@@ -17,7 +17,7 @@ const create = (req, res) => {
       ...req.body,
       _id: comments.length + 1
     }
-    users.push(newComment)
+    comments.push(newComment)
   
     res.json(newComment)
   }

@@ -17,7 +17,7 @@ const create = (req, res) => {
       ...req.body,
       _id: contacts.length + 1
     }
-    users.push(newContact)
+    contacts.push(newContact)
   
     res.json(newContact)
   }
